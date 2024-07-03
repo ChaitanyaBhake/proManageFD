@@ -79,9 +79,13 @@ const TaskCard = ({ task, isCardOpen, toggleCardShrink }) => {
   };
 
   const emailInitials = isAssignedBySomeOneElse
-    ? task.assignedBy.email.slice(0, 2)
-    : task.assigned_to_email.slice(0, 2);
-
+    ? task.assignedBy.email
+      ? task.assignedBy.email.slice(0, 2)
+      : ''
+    : task.assigned_to_email
+    ? task.assigned_to_email.slice(0, 2)
+    : '';
+    
   return (
     <>
       {isLoading ? (
