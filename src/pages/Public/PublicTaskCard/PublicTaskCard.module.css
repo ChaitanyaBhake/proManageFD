@@ -1,0 +1,95 @@
+.publicCardWrapper {
+  padding: 2rem 2.5rem;
+  border: 2px solid #edf5fe;
+  width: 100%;
+  max-width: 700px;
+  border-radius: 0.5rem;
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  overflow: hidden;
+}
+
+.moderate {
+  display: inline-block;
+  background-color: #18b0ff;
+  width: 0.5rem;
+  height: 0.5rem;
+  border-radius: 50%;
+}
+
+.low {
+  display: inline-block;
+  background-color: #63c05b;
+  width: 0.5rem;
+  height: 0.5rem;
+  border-radius: 50%;
+}
+
+.high {
+  display: inline-block;
+  background-color: #ff2473;
+  width: 0.5rem;
+  height: 0.5rem;
+  border-radius: 50%;
+}
+
+.checklists {
+  display: flex;
+  flex-direction: column;
+  gap: 1.7rem;
+}
+
+.lists {
+  max-height: 50vh;
+  display: flex;
+  flex-direction: column;
+  gap: 0.8rem;
+  overflow-y: auto;
+}
+
+.list {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  padding: 0.75rem;
+  border: 1px solid #e2e2e2;
+  border-radius: 0.75rem;
+  margin-right: 2rem;
+}
+
+.list input[type='checkbox'] {
+  width: 1rem;
+  height: 1rem;
+  accent-color: #17a2b8;
+}
+
+.list input[type='checkbox'][disabled] {
+  accent-color: #17a2b8;
+}
+
+.dueDate {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  gap: 1rem;
+  margin-top: 0.5rem;
+}
+
+.lists::-webkit-scrollbar {
+  width: 10px;
+}
+
+.lists::-webkit-scrollbar-track {
+  background: #f1f1f1;
+  border-radius: 10px;
+}
+
+.lists::-webkit-scrollbar-thumb {
+  background: rgb(156, 183, 197);
+  border-radius: 10px;
+}
+
+.lists::-webkit-scrollbar-thumb:hover {
+  background: rgb(128, 174, 197);
+}

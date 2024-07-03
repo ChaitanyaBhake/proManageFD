@@ -1,0 +1,16 @@
+.wrapper {
+  display: flex;
+  height: 100vh;
+}
+
+.sideBarWrapper {
+  min-width: 300px;
+  border-right: 2px solid #edf5fe;
+  height: 100%;
+}
+
+.outletWrapper {
+  overflow: hidden;
+  flex: 1;
+  padding: 1.5rem;
+}

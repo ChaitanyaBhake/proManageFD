@@ -1,0 +1,30 @@
+.categoriesDiv {
+  height: 100%;
+  display: flex;
+  gap: 1rem;
+  overflow-x: scroll;
+  padding-bottom: 8px;
+}
+
+.categoriesDiv::-webkit-scrollbar {
+  width: 6px !important;
+  height: 12px;
+}
+
+.categoriesDiv::-webkit-scrollbar-track {
+  background: #f1f1f1;
+  border-radius: 10px;
+}
+
+.categoriesDiv::-webkit-scrollbar-thumb {
+  background: rgb(156, 183, 197);
+  border-radius: 10px;
+}
+
+.categoriesDiv::-webkit-scrollbar-thumb:hover {
+  background: #91908f;
+}
+
+.wrapper {
+  margin-top: 2rem;
+}

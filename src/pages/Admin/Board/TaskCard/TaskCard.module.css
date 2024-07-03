@@ -1,0 +1,132 @@
+.wrapper {
+  background-color: white;
+  padding: 0.75rem;
+  border-radius: 1rem;
+  box-shadow: 0 6.4px 14.4px 0 rgb(0 0 0 /13%), 0 1.2px 3.6px 0 rgb(0 0 0 / 11%);
+  margin-right: 0.5rem;
+}
+
+.priorityMenuDiv {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.moderate {
+  display: inline-block;
+  background-color: #18b0ff;
+  width: 0.5rem;
+  height: 0.5rem;
+  border-radius: 50%;
+}
+
+.low {
+  display: inline-block;
+  background-color: #63c05b;
+  width: 0.5rem;
+  height: 0.5rem;
+  border-radius: 50%;
+}
+
+.high {
+  display: inline-block;
+  background-color: #ff2473;
+  width: 0.5rem;
+  height: 0.5rem;
+  border-radius: 50%;
+}
+
+.menu {
+  position: relative;
+}
+
+.menuButton {
+  background-color: transparent;
+  border: none;
+  border-radius: 50%;
+  cursor: pointer;
+}
+
+.menuItems {
+  position: absolute;
+  right: 0;
+  background-color: white;
+  box-shadow: 0 6.4px 14.4px 0 rgb(0 0 0 /13%), 0 1.2px 3.6px 0 rgb(0 0 0 / 11%);
+  z-index: 1;
+  border-radius: 1rem;
+  width: 8rem;
+  height: fit-content;
+}
+
+.menuItem {
+  cursor: pointer;
+  padding: 0.5rem;
+  font-size: 0.9rem;
+  display: flex;
+  padding-left: 13px;
+}
+
+.menuItem:nth-child(3) {
+  color: red;
+}
+
+.menuItem:hover {
+  background-color: rgb(226, 226, 226);
+}
+
+.badgesWrapper {
+  margin-top: 1rem;
+  display: flex;
+  justify-content: space-between;
+}
+
+.categoriesBadgesDiv {
+  display: flex;
+  gap: 0.5rem;
+  justify-content: flex-end;
+}
+
+.deleteActions {
+  margin-top: 1.5rem;
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+.emailCircle {
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  width: 24px;
+  height: 24px;
+  border-radius: 50%;
+  background-color: #ffebeb;
+  color: rgb(41, 40, 40);
+  font-weight: bold;
+  font-size: 12px;
+  text-transform: uppercase;
+  position: relative;
+  cursor: pointer;
+}
+
+.tooltip {
+  visibility: hidden;
+  width: 200px;
+  background-color: #ffebeb;
+  color: black;
+  text-align: center;
+  border-radius: 6px;
+  padding: 5px;
+  position: absolute;
+  z-index: 1;
+  top: 90%;
+  left: 50%;
+  transform: translateX(-30%);
+  opacity: 0;
+  transition: opacity 0.3s;
+}
+
+.emailCircle:hover .tooltip {
+  visibility: visible;
+  opacity: 1;
+}

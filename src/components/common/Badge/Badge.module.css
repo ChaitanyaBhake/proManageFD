@@ -1,0 +1,26 @@
+.badge {
+  background-color: #eeecec;
+  color: #767575;
+  padding: 0.1rem 0.5rem;
+  border-radius: 0.325rem;
+  max-width: fit-content;
+}
+
+.clickable {
+  cursor: pointer;
+}
+
+.error {
+  background-color: #cf3636;
+  color: white;
+}
+
+.success {
+  background-color: #63c05b;
+  color: white;
+}
+
+.neutral {
+  background-color: #b0b0b0;
+  color: white;
+}

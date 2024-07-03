@@ -1,0 +1,38 @@
+@keyframes shimmer {
+  0% {
+    top: -50%;
+    left: -50%;
+  }
+  100% {
+    top: 150%;
+    left: 150%;
+  }
+}
+
+.shimmerWrapper {
+  position: relative;
+  overflow: hidden;
+  height: 24vh;
+  width: 100%;
+  background-color: #c5c5c5;
+  border-radius: 1rem;
+}
+
+.shimmer {
+  content: '';
+  position: absolute;
+  height: 300%;
+  width: 300%;
+  top: -50%;
+  left: -50%;
+  background: linear-gradient(
+    45deg,
+    transparent 0%,
+    rgba(255, 255, 255, 0.1) 45%,
+    rgba(255, 255, 255, 0.5) 50%,
+    rgba(255, 255, 255, 0.1) 45%,
+    transparent 100%
+  );
+  transform: rotate(-45deg);
+  animation: shimmer 2s infinite forwards;
+}

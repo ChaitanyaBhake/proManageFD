@@ -1,0 +1,15 @@
+.checkListHeading {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.button {
+  border: none;
+  display: flex;
+  cursor: pointer;
+}
+
+.rotate {
+  transform: rotate(180deg);
+}

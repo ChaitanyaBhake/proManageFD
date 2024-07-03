@@ -1,0 +1,13 @@
+.wrapper form {
+  max-width: 500px;
+  margin-top: 2rem;
+}
+
+.wrapper form > * {
+  margin-top: 1rem;
+}
+
+.wrapper button {
+  margin-top: 2rem;
+  width: 100%;
+}

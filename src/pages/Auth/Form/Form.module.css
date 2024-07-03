@@ -1,0 +1,23 @@
+.wrapperDiv {
+  width: 100%;
+  max-width: 400px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.wrapperDiv > P {
+  text-align: center;
+  margin-bottom: 2rem;
+}
+
+.loginRegisterDiv {
+  margin-top: 2rem;
+  text-align: center;
+}
+
+.loginRegisterDiv button {
+  width: 25vw;
+  margin-top: 1rem;
+}

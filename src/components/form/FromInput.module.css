@@ -1,0 +1,30 @@
+.wrapperDiv {
+  display: flex;
+  flex-direction: column;
+}
+
+.inputDiv {
+  display: flex;
+  align-items: center;
+  border: 2px solid #d0d0d0;
+  padding: 0.5rem;
+  border-radius: 0.5rem;
+}
+
+.iconDiv {
+  display: flex;
+  color: #828282;
+}
+
+.input {
+  font-size: 1rem;
+  padding: 0.5rem 1rem;
+  border: none;
+  flex: 1;
+  outline: none;
+  color: #828282;
+}
+
+.wrapperDiv p {
+  margin-top: 0.25rem;
+}

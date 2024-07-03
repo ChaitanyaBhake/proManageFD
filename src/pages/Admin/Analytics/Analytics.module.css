@@ -1,0 +1,31 @@
+.analyticsLists {
+  display: flex;
+  gap: 2rem;
+  margin-top: 2rem;
+  max-width: 800px;
+}
+
+.tasksUl {
+  display: flex;
+  flex: 1;
+  flex-direction: column;
+  gap: 1rem;
+  padding-top: 1rem;
+  padding-left: 4.4rem;
+  padding-right: 2.4rem;
+  padding-bottom: 2.4rem;
+  margin-left: 2rem;
+  margin-top: 1rem;
+  background-color: #f9fcff;
+  border-radius: 0.5rem;
+}
+
+.tasksUl li div {
+  display: flex;
+  justify-content: space-between;
+}
+
+.tasksUl li::marker {
+  color: #90c4cc;
+  font-size: 1.6rem;
+}

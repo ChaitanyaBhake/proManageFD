@@ -1,0 +1,40 @@
+.wrapper {
+  width: 55%;
+  height: 30vh;
+  background: linear-gradient(90deg, #f0f0f0, #e0e0e0, #f0f0f0);
+  background-size: 200% 100%;
+  animation: shimmer 1.5s infinite;
+  border-radius: 8px;
+  padding-top: 1rem;
+  padding-left: 4.4rem;
+  padding-right: 2.4rem;
+  padding-bottom: 2.4rem;
+  margin-left: 2rem;
+  margin-top: 5rem;
+}
+
+.shimmerLists {
+  margin-top: 2rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 1rem;
+}
+
+.shimmerList {
+  flex: 1;
+  height: 10rem;
+  background: linear-gradient(90deg, #f0f0f0, #e0e0e0, #f0f0f0);
+  background-size: 200% 100%;
+  animation: shimmer 1.5s infinite;
+  border-radius: 8px;
+}
+
+@keyframes shimmer {
+  0% {
+    background-position: -200% 0;
+  }
+  100% {
+    background-position: 200% 0;
+  }
+}

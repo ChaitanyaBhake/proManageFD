@@ -1,0 +1,57 @@
+.text {
+  max-width: 32.5rem;
+}
+
+.stepOne {
+  font-size: 0.75rem;
+  letter-spacing: 0.0025em;
+  line-height: 1rem;
+}
+
+.stepTwo {
+  font-size: 0.875rem;
+  letter-spacing: 0em;
+  line-height: 1.25rem;
+}
+
+.stepThree {
+  font-size: 1rem;
+  letter-spacing: 0em;
+  line-height: 1.5rem;
+}
+
+.stepFour {
+  font-size: 1.125rem;
+  letter-spacing: -0.0025em;
+  line-height: 1.625rem;
+}
+
+.stepFive {
+  font-size: 1.25rem;
+  letter-spacing: -0.005em;
+  line-height: 1.75rem;
+}
+
+.stepSix {
+  font-size: 1.5rem;
+  letter-spacing: -0.00625em;
+  line-height: 1.875rem;
+}
+
+.stepSeven {
+  font-size: 1.75rem;
+  letter-spacing: -0.0075em;
+  line-height: 2.25rem;
+}
+
+.stepEight {
+  font-size: 2.1875rem;
+  letter-spacing: -0.01em;
+  line-height: 2.5rem;
+}
+
+.stepNine {
+  font-size: 3.75rem;
+  letter-spacing: -0.025em;
+  line-height: 3.75rem;
+}

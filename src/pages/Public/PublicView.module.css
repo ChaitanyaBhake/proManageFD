@@ -1,0 +1,54 @@
+.wrapper {
+  height: 100vh;
+  padding: 1rem;
+}
+
+.logo {
+  padding: 1rem 3rem;
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+
+.title {
+  font-weight: 600;
+  font-size: 1.1rem;
+}
+
+.logo .image {
+  display: flex;
+  width: 1.7rem;
+  height: 1.7rem;
+}
+
+.image img {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+}
+
+.wrapper main {
+  display: flex;
+  justify-content: center;
+  flex: 1;
+  padding: 1rem;
+}
+
+@media (max-width: 768px) {
+  .logo {
+    padding: 1rem;
+    gap: 0.5rem;
+  }
+
+  .title {
+    font-weight: 500;
+    border: 2px solid red;
+    font-size: 1.25rem;
+  }
+
+  .logo .image {
+    display: flex;
+    width: 2rem;
+    height: 2rem;
+  }
+}

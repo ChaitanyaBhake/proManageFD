@@ -1,0 +1,70 @@
+.wrapper {
+  height: 100%;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+}
+
+.logoImgWrapper {
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  padding: 2rem 1rem;
+  gap: 1rem;
+  margin-right: 5.4rem;
+}
+
+.logoImage {
+  display: flex;
+  width: 1.5rem;
+  height: 1.5rem;
+}
+
+img {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+}
+
+.linksWrapper > * {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  gap: 1rem;
+  padding: 0.5rem 2rem;
+  opacity: 0.6;
+}
+
+.linksWrapper > :hover,
+.activeLink {
+  background-color: #4391ed10;
+  opacity: 1;
+  
+}
+
+.logoutWrapper {
+  display: flex;
+  gap: 1rem;
+  padding: 1rem 2rem;
+  color: rgb(197, 24, 24);
+  margin-top: auto;
+  cursor: pointer;
+  justify-content: center;
+  margin-bottom: 2rem;
+}
+
+.logoutWrapper:hover {
+  text-decoration: underline;
+  background-color: #ff0b0b10;
+}
+
+.confirmLogoutWrapper {
+  margin-top: 1.5rem;
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+.linksWrapper2 > *{
+  margin-bottom: 1rem;
+}
