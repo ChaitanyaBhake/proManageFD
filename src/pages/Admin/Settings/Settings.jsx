@@ -76,7 +76,6 @@ const Settings = () => {
       // 3) Make Api Call Once All Validation are Checked
       const baseUrl = import.meta.env.VITE_BACKEND_URL;
 
-      
       const response = await fetch(`${baseUrl}/user/update`, {
         method: 'PUT',
         body: JSON.stringify(data),
@@ -104,8 +103,7 @@ const Settings = () => {
       //Logout Function from AuthContext
       logout();
     } catch (error) {
-      console.log(error);
-      console.log(error.message);
+      toast.error(error.message);
     }
   };
 
