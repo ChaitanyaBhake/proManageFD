@@ -78,6 +78,10 @@ const TaskCard = ({ task, isCardOpen, toggleCardShrink }) => {
     toast.success('Link Copied');
   };
 
+  const emailInitials = isAssignedBySomeOneElse
+    ? task.assignedBy.email.slice(0, 2)
+    : task.assigned_to_email.slice(0, 2);
+
   return (
     <>
       {isLoading ? (
@@ -96,18 +100,23 @@ const TaskCard = ({ task, isCardOpen, toggleCardShrink }) => {
               {task.priority.toUpperCase()} PRIORITY{' '}
               {task.assigned_to_email && (
                 <span className={styles.emailCircle}>
-                  {task.assigned_to_email.slice(0, 2)}
+                  {emailInitials}
                   <span className={styles.tooltip}>
-                    <>
-                      <span>
-                        {task.assigned_to_email === user.data.email
-                          ? `Assigned By : ${task.assignedBy.name}`
-                          : 'Assigned To'}
-                      </span>
-                      <span style={{ display: 'inline-block' }}>
-                        Email: {task.assigned_to_email}
-                      </span>
-                    </>
+                    {task.assigned_to_email === user.data.email ? (
+                      <>
+                        <span>{`Assigned By : ${task.assignedBy.name}`}</span>
+                        <span style={{ display: 'inline-block' }}>
+                          Email: {task.assignedBy.email}
+                        </span>
+                      </>
+                    ) : (
+                      <>
+                        <span>Assigned To</span>
+                        <span style={{ display: 'inline-block' }}>
+                          Email: {task.assigned_to_email}
+                        </span>
+                      </>
+                    )}
                   </span>
                 </span>
               )}
