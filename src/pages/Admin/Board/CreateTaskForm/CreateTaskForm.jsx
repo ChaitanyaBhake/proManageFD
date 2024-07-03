@@ -37,6 +37,7 @@ const CreateTaskForm = ({
   const [isEmailAdded, setIsEmailAdded] = useState(false);
   const [assign_to_email, setAssignToEmail] = useState('');
   const [isInputClicked, setInputClicked] = useState(false);
+  const [isAssignedToOther, setIsAssignedToOther] = useState(false);
 
   // Date State
   const [startDate, setStartDate] = useState(null);
@@ -78,10 +79,22 @@ const CreateTaskForm = ({
     }
   }, [assign_to_email]);
 
+  // Check if task is assigned to someone else
+  useEffect(() => {
+    setIsAssignedToOther(
+      task.assigned_to_email && task.assigned_to_email !== user.data.email
+    );
+  }, [task, user]);
+
   //Add Task
   const handleAddTask = async () => {
     setIsLoading(true);
     try {
+      if (isAssignedToOther) {
+        setTask((draft) => {
+          draft.status = 'backlog';
+        });
+      }
       await addTask(task);
       modalToggler();
       fetchTasks();
@@ -144,6 +157,9 @@ const CreateTaskForm = ({
   const addAssignToEmail = (email) => {
     setTask((draft) => {
       draft.assigned_to_email = email;
+      if (email !== user.data.email) {
+        draft.status = 'backlog'; 
+      }
     });
   };
 
